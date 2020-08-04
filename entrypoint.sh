@@ -1,5 +1,5 @@
 #!/bin/bash
-set
+set -ex
 
 git-filter-repo --path=lib/{includes,tests/phpunit}/{c,C}hanges/ --path lib/packages/wikibase/changes/ --path .mailmap --path-rename=lib/includes/{c,C}hanges:src --path-rename=lib/tests/phpunit/{c,C}hanges:tests --path-rename lib/packages/wikibase/changes/: --message-callback 'return re.sub(b"^changes: ", b"", message)'
 
