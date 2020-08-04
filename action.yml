@@ -1,0 +1,6 @@
+# action.yml
+name: 'Wikibase Changes Git Repo Filter'
+description: 'Filter and create separate repo for the Wikibase Changes library'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
