@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ex
 
+mkdir -p ~/.ssh
+ssh-keyscan github.com >> ~/.ssh/known_hosts
 eval `ssh-agent -s`
 ssh-add - <<< "$SSH_PRIVATE_KEY"
 
