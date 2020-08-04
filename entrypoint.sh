@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-ssh-agent
+eval `ssh-agent -s`
 echo "prekey"
 echo $SSH_PRIVATE_KEY
 echo "postkey"
