@@ -20,9 +20,9 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    SSH_PRIVATE_KEY: ${{ input.privateKey }}
-    TARGET_ORG: ${{ input.targetOrg }}
-    TARGET_REPO: ${{ input.targetRepo }}
-    TARGET_BRANCH: ${{ input.targetBranch }}
+    SSH_PRIVATE_KEY: "${{ input.privateKey }}"
+    TARGET_ORG: "${{ input.targetOrg }}"
+    TARGET_REPO: "${{ input.targetRepo }}"
+    TARGET_BRANCH: "${{ input.targetBranch }}"
   args:
-    - ${{ input.filterArguments }}
+    - "${{ input.filterArguments }}"
