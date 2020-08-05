@@ -7,7 +7,7 @@ ssh-add - <<< "$SSH_PRIVATE_KEY"
 
 echo "$@"
 
-git-filter-repo "$@"
+git-filter-repo $1
 
 git remote add remotetarget "git@github.com:$TARGET_ORG/$TARGET_REPO.git"
 git push remotetarget HEAD:"$TARGET_BRANCH"
