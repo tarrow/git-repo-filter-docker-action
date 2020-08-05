@@ -10,4 +10,4 @@ ssh-add -l
 git-filter-repo "$@"
 
 git remote add remotetarget "git@github.com:$TARGET_ORG/$TARGET_REPO.git"
-git push remotetarget HEAD:$TARGET_BRANCH
+git push remotetarget "HEAD:$TARGET_BRANCH"
