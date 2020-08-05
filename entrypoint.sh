@@ -5,7 +5,7 @@ ssh-keyscan -t rsa github.com >> /etc/ssh/ssh_known_hosts
 eval `ssh-agent -s`
 ssh-add - <<< "$SSH_PRIVATE_KEY"
 
-ssh-add -l
+echo "$@"
 
 git-filter-repo "$@"
 
